@@ -1,4 +1,4 @@
-#Windows Compatible Ansible Lab Using Vagrant And Virtualbox
+# Windows Compatible Ansible Lab Using Vagrant And Virtualbox
 
 This repository contains three node ansible lab setup using vagrant and virtualbox as the provider.
 

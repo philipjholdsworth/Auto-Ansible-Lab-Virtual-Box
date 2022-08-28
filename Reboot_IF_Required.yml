@@ -1,0 +1,36 @@
+---
+- name: Part 1 - Reboot Machine 1
+  hosts:
+    - managed1
+  gather_facts: yes
+  tasks:
+    - name: "Check if reboot is required"
+      command: needs-restarting -r
+      register: reboot_required
+      ignore_errors: true
+      changed_when: false
+
+    - name: "Perform reboot if required"
+      shell: ( /bin/sleep 5; shutdown -r now "Ansible updates triggered" ) &
+      async: 30
+      poll: 0
+      ignore_errors: true
+      when: reboot_required.rc == 1
+
+- name: Part 2 - Reboot Machine 2
+  hosts:
+    - managed2
+  gather_facts: yes
+  tasks:
+    - name: "Check if reboot is required"
+      command: needs-restarting -r
+      register: reboot_required
+      ignore_errors: true
+      changed_when: false
+
+    - name: "Perform reboot if required"
+      shell: ( /bin/sleep 5; shutdown -r now "Ansible updates triggered" ) &
+      async: 30
+      poll: 0
+      ignore_errors: true
+      when: reboot_required.rc == 1

@@ -1,0 +1,11 @@
+---
+- name: "Ping Box's"
+  hosts:
+    - controller
+    - managed1
+    - managed2
+  gather_facts: yes
+  tasks:
+  - action: ping
+    register: hello
+  - debug: msg="{hello.stdout}"

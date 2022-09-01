@@ -78,11 +78,11 @@ controller | SUCCESS => {
 
 On your host maching run the following:
 
-  bash Ansible_Script_Upload.sh
+    bash Ansible_Script_Upload.sh
 
 To choose the playbooks you want to upload. Edit the Ansible_Script_Uplaod.sh file:
   
-  "scp -F vagrant-sshPlaybooks/Reboot_IF_Required.yml Playbooks/Linux_Reboot.yml..."
+    "scp -F vagrant-sshPlaybooks/Reboot_IF_Required.yml Playbooks/Linux_Reboot.yml..."
   
   
     
@@ -90,21 +90,20 @@ To choose the playbooks you want to upload. Edit the Ansible_Script_Uplaod.sh fi
 
 ssh onto the Controller Node
 
-  vagrant ssh controller
+    vagrant ssh controller
   
 Move to: /home/vagrant/ansible_project
  
-  cd /home/vagrant/ansible_project
+    cd /home/vagrant/ansible_project
   
 Now you are free to run your playbooks
  
-  ansible-playbook Linux_reboot.yml
+    ansible-playbook Linux_reboot.yml
 
 ### Vagrantfile
 
 The Vagrantfile can be altered to change the Virutal machine provisioning if you which to ulter the lab configuration
 
-    Give an example
 
 ### boostrap.sh / key_gen.sh / key_setup.sh 
 
@@ -113,7 +112,7 @@ These files are used in the inital Ansible_Lab_setup.sh script and automate all 
 
 ## To kill your Lab run the following on your host machine:
 
-  vagrant destroy -f
+    vagrant destroy -f
 
 
 ## Authors

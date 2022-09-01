@@ -1,0 +1,27 @@
+# This Playbook updates the distrubtion (uses 'apt' and DEB packages)
+---
+- name: Part 1 - Update Managed1
+  hosts:
+    - managed1
+  gather_facts: no
+  tasks:
+    - name: Updating Distrubution on Managed1
+      become: yes
+      apt:
+        update_cache: yes
+        cache_valid_time: 3600
+        upgrade: dist
+
+
+
+- name: Part 2 - Updating All Packages on Managed2
+  hosts:
+    - managed2
+  gather_facts: no
+  tasks:
+    - name: Updating Distrubution on Managed2
+      become: yes
+      apt:
+        update_cache: yes
+        cache_valid_time: 3600
+        upgrade: dist

@@ -1,3 +1,4 @@
+# This Playbook reboots the servers 
 ---
 - name: Part 1 - Reboot Machine 1
   hosts:

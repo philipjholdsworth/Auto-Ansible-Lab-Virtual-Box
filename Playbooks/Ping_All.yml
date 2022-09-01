@@ -1,3 +1,4 @@
+# This Playbook pings the servers 
 ---
 - name: "Ping Box's"
   hosts:
@@ -8,4 +9,5 @@
   tasks:
   - action: ping
     register: hello
-  - debug: msg="{hello.stdout}"
+  - debug:
+      var: hello

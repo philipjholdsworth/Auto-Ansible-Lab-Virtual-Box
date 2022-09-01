@@ -1,0 +1,26 @@
+# This Playbook updates servers that use 'apt' and DEB packages
+---
+- name: Part 1 - Update Managed1
+  hosts:
+    - managed1
+  gather_facts: no
+  tasks:
+
+    - name: Updating All Packages on Managed1
+      become: yes
+      apt:
+        name: "*"
+        state: latest
+
+
+
+- name: Part 2 - Updating All Packages on Managed2
+  hosts:
+    - managed2
+  gather_facts: no
+  tasks:
+    - name: Updating All Packages on Managed2
+      become: yes
+      apt:
+        name: "*"
+        state: latest

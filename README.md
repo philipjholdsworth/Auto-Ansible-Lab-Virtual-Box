@@ -26,9 +26,15 @@ Requirements for the software and other tools to build, test and push
 
 You are now ready to initialze the lab
 
-  With your chosen command line change directory to the folder just created
-  Now Run: Bash Ansible.Lab_Setup.sh
-  This will create the following lab enviroment:
+## initialzing the Lab
+
+With your chosen command line, change directory to the folder you just created.
+
+Now run:
+
+    Bash Ansible.Lab_Setup.sh
+  
+This will create the following lab enviroment:
   
 |    Node Type   | Node Name             |  IP Address  | OS Flavor     |
 | ---------------| --------------------- |--------------|---------------|

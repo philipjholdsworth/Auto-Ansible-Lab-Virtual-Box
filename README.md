@@ -43,9 +43,10 @@ This will create the following lab enviroment:
 | managed Node   | managed2.anslab.com   | 192.168.10.5 | ubuntu/focal64|
 
   Controller Node - Hosts Ansible
+  
   Managed Node(S) - Servers you want to manage
   
-### Once the setup is complete you should see a successfull ping test:
+Once the setup is complete you should see a successfull ping test:
   
  ```bash
  -------------------- RUNNING ANSBILE ADHOC COMMAND - UPTIME ------------------------------

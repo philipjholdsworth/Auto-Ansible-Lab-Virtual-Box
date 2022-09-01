@@ -3,20 +3,6 @@
 This repository contains a three node ansible lab. Setup using vagrant and virtualbox as the provider. 
 Host OS - Windows
 
-
-
-|    Node Type   | Node Name             |  IP Address  | OS Flavor     |
-| ---------------| --------------------- |--------------|---------------|
-| Controller Node| controller.anslab.com | 192.168.10.3 | ubuntu/focal64|
-| managed Node   | managed1.anslab.com   | 192.168.10.4 | ubuntu/focal64|
-| managed Node   | managed2.anslab.com   | 192.168.10.5 | ubuntu/focal64|
-
-
-# Windows Compatible Ansible Lab Using Vagrant And Virtualbox
-
-This repository contains a three node ansible lab. Setup using vagrant and virtualbox as the provider. 
-Host OS - Windows
-
 ## Getting Started
 
 These instructions will help create a copy of the Ansible Lab setup on

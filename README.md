@@ -47,7 +47,7 @@ This will create the following lab enviroment:
   
   Once the setup is complete you should see a successfull Ping test:
   
- '''bash
+ ```bash
  -------------------- RUNNING ANSBILE ADHOC COMMAND - UPTIME ------------------------------
 
 
@@ -78,7 +78,7 @@ controller | SUCCESS => {
     },
     "changed": false,
     "ping": "pong"
-'''
+```
 
 ## Uploading Playbooks
 

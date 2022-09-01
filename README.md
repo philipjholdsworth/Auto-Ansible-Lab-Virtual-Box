@@ -18,16 +18,13 @@ Requirements for the software and other tools to build, test and push
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development
-environment running
+1. Install Vagrant & Virual Box on your hoast
 
-Install Vagrant & Virual Box on your hoast
+2. Create a Folder in which to locate your Ansible Lab
 
-Create a Folder in which to locate your Ansible Lab
+3. Cloan the repository to this newly created folder
 
-Cloan the repository to this newly created folder
-
-You are no ready to initialze the lab
+You are now ready to initialze the lab
 
   With your chosen command line change directory to the folder just created
   Now Run: Bash Ansible.Lab_Setup.sh

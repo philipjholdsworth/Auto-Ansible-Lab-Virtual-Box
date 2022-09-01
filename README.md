@@ -1,6 +1,7 @@
 # Windows Compatible Ansible Lab Using Vagrant And Virtualbox
 
 This repository contains a three node ansible lab. Setup using vagrant and virtualbox as the provider. 
+
 Host OS - Windows
 
 ## Getting Started

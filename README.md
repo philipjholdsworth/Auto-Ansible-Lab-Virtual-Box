@@ -24,9 +24,9 @@ Requirements for the software and other tools to build, test and push
 
 3. Cloan the repository to this newly created folder
 
-You are now ready to initialze the lab
+You are now ready to initializing the lab
 
-## initialzing the Lab
+## Initializing The Lab
 
 With your chosen command line, change directory to the folder you just created.
 

@@ -47,7 +47,7 @@ This will create the following lab enviroment:
   
   Once the setup is complete you should see a successfull Ping test:
   
-  '''-------------------- RUNNING ANSBILE ADHOC COMMAND - UPTIME ------------------------------
+ ''' -------------------- RUNNING ANSBILE ADHOC COMMAND - UPTIME ------------------------------
 
 
 managed2 | CHANGED | rc=0 >>
@@ -76,7 +76,8 @@ controller | SUCCESS => {
         "discovered_interpreter_python": "/usr/bin/python3"
     },
     "changed": false,
-    "ping": "pong"'''
+    "ping": "pong"
+'''
 
 ## Uploading Playbooks
 

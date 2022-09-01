@@ -28,11 +28,11 @@ You are now ready to initializing the lab
 
 ## Initializing The Lab
 
-With your chosen command line, change directory to the folder you just created.
+With your chosen command line (im using Cmder - https://cmder.app/) , change directory to the folder you just created.
 
 Now run:
 
-    Bash Ansible.Lab_Setup.sh
+    bash Ansible.Lab_Setup.sh
   
 This will create the following lab enviroment:
   

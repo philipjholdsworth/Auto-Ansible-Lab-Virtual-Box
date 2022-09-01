@@ -100,7 +100,7 @@ Now you are free to run your playbooks
  
     ansible-playbook Linux_reboot.yml
 
-### Vagrantfile
+## Vagrantfile
 
 The Vagrantfile can be altered to change the Virutal machine provisioning if you which to ulter the lab configuration
 

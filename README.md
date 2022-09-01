@@ -45,7 +45,7 @@ This will create the following lab enviroment:
   Controller Node - Hosts Ansible
   Managed Node(S) - Servers you want to manage
   
-###Once the setup is complete you should see a successfull ping test:
+### Once the setup is complete you should see a successfull ping test:
   
  ```bash
  -------------------- RUNNING ANSBILE ADHOC COMMAND - UPTIME ------------------------------

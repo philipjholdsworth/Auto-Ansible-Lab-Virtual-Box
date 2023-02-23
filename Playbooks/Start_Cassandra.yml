@@ -1,0 +1,39 @@
+---
+- name: Check and start services
+  hosts: all
+  gather_facts: true
+  become: true
+  
+  tasks:
+  - name: Check Cassandra service status
+    systemd:
+      name: cassandra
+      state: started
+    register: cassandra_status
+    
+  - name: Display Cassandra service status
+    debug:
+      var: cassandra_status
+      
+  - name: Start Cassandra service if not running
+    systemd:
+      name: cassandra
+      state: started
+    when: cassandra_status.changed
+      
+  - name: Check GIR service status
+    systemd:
+      name: gir
+      state: started
+    when: inventory_hostname == 'GIRmachine'
+    register: gir_status
+    
+  - name: Display GIR service status
+    debug:
+      var: gir_status
+      
+  - name: Start GIR service if not running
+    systemd:
+      name: gir
+      state: started
+    when: gir_status.changed and inventory_hostname == 'GIRmachine'
